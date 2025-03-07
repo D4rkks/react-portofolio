@@ -1,0 +1,325 @@
+.content {
+    margin-bottom: 2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    font-family: var(--font-sans);
+    margin-top: 4rem;
+    line-height: 1.3;
+    font-family: Whitney, sans-serif;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column; /* Muda para coluna por padrão */
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+.title-container {
+    display: flex; /* Usando flexbox para manter título e imagem lado a lado */
+    align-items: flex-start; /* Alinhamento no início */
+    width: 100%; /* Largura total para o contêiner */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+}
+
+.title {
+    max-width: 50rem;
+    flex: 1; /* Permite que o título use o espaço disponível */
+    margin-right: 1rem; /* Espaço entre o título e a imagem */
+}
+
+.will-smith {
+    margin-left: 0; /* Remover margem esquerda */
+    width: 30rem; /* Largura desejada do retângulo */
+    height: 15rem; /* Altura desejada do retângulo */
+}
+
+.skills {
+    max-width: 100rem;
+    width: 100%; /* Garante que a seção skills ocupe 100% da largura disponível */
+    margin-top: 2rem; /* Adiciona espaço entre o título e a seção de habilidades */
+    padding: 1rem; /* Adiciona preenchimento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+.skills .title {
+    background: linear-gradient(to right, rgb(0, 174, 255), rgb(199, 12, 199)); /* Degradê de azul para roxo */
+    -webkit-background-clip: text; /* Clipa o fundo para o texto no Safari */
+    -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
+    font-size: 53px;
+}
+.experience {
+    max-width: 100rem;
+    width: 100%; /* Garante que a seção skills ocupe 100% da largura disponível */
+    margin-top: 2rem; /* Adiciona espaço entre o título e a seção de habilidades */
+    padding: 1rem; /* Adiciona preenchimento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+.experience .title {
+    background: linear-gradient(to right, rgb(21, 201, 51), rgb(255, 187, 0)); /* Degradê de azul para roxo */
+    -webkit-background-clip: text; /* Clipa o fundo para o texto no Safari */
+    -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
+    font-size: 53px;
+}
+body.dark .historia {
+    border-left: 3px solid #e6e6e6;
+    border-bottom: 3px solid #e6e6e6;
+    max-width: 100rem;
+    width: 100%; /* Garante que a seção skills ocupe 100% da largura disponível */
+    margin-top: 1rem; /* Adiciona espaço entre o título e a seção de habilidades */
+    padding: 1rem; /* Adiciona preenchimento interno */
+}
+body.light .historia {
+    border-left: 3px solid #1b1b1b;
+    border-bottom: 3px solid #1b1b1b;
+    max-width: 100rem;
+    width: 100%; /* Garante que a seção skills ocupe 100% da largura disponível */
+    margin-top: 1rem; /* Adiciona espaço entre o título e a seção de habilidades */
+    padding: 1rem; /* Adiciona preenchimento interno */
+}
+body.dark .historia2 {
+    border-right: 3px solid #e6e6e6;
+    border-bottom: 3px solid #e6e6e6;
+    max-width: 100rem;
+    width: 100%; /* Garante que a seção skills ocupe 100% da largura disponível */
+    margin-top: 0rem; /* Adiciona espaço entre o título e a seção de habilidades */
+    padding: 1rem; /* Adiciona preenchimento interno */
+}
+body.light .historia2 {
+    border-right: 3px solid #1b1b1b;
+    border-bottom: 3px solid #1b1b1b;
+    max-width: 100rem;
+    width: 100%; /* Garante que a seção skills ocupe 100% da largura disponível */
+    margin-top: 0rem; /* Adiciona espaço entre o título e a seção de habilidades */
+    padding: 1rem; /* Adiciona preenchimento interno */
+}
+body.dark .historia3 {
+    border-left: 3px solid #e6e6e6;
+    max-width: 100rem;
+    width: 100%; /* Garante que a seção skills ocupe 100% da largura disponível */
+    margin-top: 0rem; /* Adiciona espaço entre o título e a seção de habilidades */
+    padding: 1rem; /* Adiciona preenchimento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+body.light .historia3 {
+    border-left: 3px solid #1b1b1b;
+    max-width: 100rem;
+    width: 100%; /* Garante que a seção skills ocupe 100% da largura disponível */
+    margin-top: 0rem; /* Adiciona espaço entre o título e a seção de habilidades */
+    padding: 1rem; /* Adiciona preenchimento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+.historia .title {
+    background: linear-gradient(to right, rgb(212, 33, 33), rgb(255, 174, 0)); /* Degradê de azul para roxo */
+    -webkit-background-clip: text; /* Clipa o fundo para o texto no Safari */
+    -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
+    font-size: 53px;
+}
+.historia-item {
+    height: 20rem;
+}
+.historia-item h2{
+    margin-top: 20px;
+    font-size: 40px;
+    text-align: left;
+}
+.historia2 h2{
+    text-align: right;
+}
+body.dark .historia-item h3{
+    color:#cfcfcf;
+    margin-top: -20px;
+    max-width: 900px;
+    font-size: 24px;
+    text-align: left;
+}
+body.light .historia-item h3{
+    color:#1b1b1b;
+    margin-top: -20px;
+    max-width: 900px;
+    font-size: 24px;
+    text-align: left;
+}
+.title .name {
+    font-size: 53px;
+}
+.title .divider {
+    height: 0px;
+}
+body.dark .title .undertext {
+    color: #cfcfcf;
+    font-weight: 500;
+    font-size: 18px;
+}
+body.light .title .undertext {
+    color: #6e6e6e;
+    font-weight: 500;
+    font-size: 18px;
+}
+.title .img {
+    width: 1.5rem; /* Largura desejada do retângulo */
+    height: auto; /* Altura desejada do retângulo */
+    display: flex; /* Flexbox para o contêiner da imagem */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    overflow: hidden; /* Esconde partes da imagem que saem do retângulo */
+    object-fit: fill; /* Faz a imagem cobrir o contêiner, mantendo a proporção */
+}
+.title .buttons {
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -55px;
+    padding: rem 0;
+    font-size: 14px;
+}
+.title .buttons a {
+    color: white;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+body.light .buttons a {
+    color: #1b1b1b;
+}
+@media (max-width: 768px) {
+    body.dark .historia-item h3 {
+        font-size: 18px;
+    }
+    body.light .historia-item h3 {
+        font-size: 18px;
+    }
+    .historia .h2{
+        text-align: center; /* Alinha o texto à esquerda */
+    }
+    .title-container {
+        flex-direction: column; /* Coloca os itens em coluna em telas menores */
+        align-items: center; /* Centraliza o conteúdo no eixo horizontal */
+        text-align: center; /* Centraliza o texto no contêiner */
+    }
+    .skills {
+        text-align: center;
+    }
+    .experience {
+        text-align: center;
+    }
+    .experience .timeline{
+        text-align: left;
+    }
+    .historia {
+        text-align: center;
+    }
+    .will-smith {
+        margin-left: 0;
+        padding: 0.7rem 0rem;
+        width: 100%; /* A imagem ocupa 100% da largura */
+        height: 200px; /* Ajusta a altura automaticamente */
+        margin-top: 1rem; /* Espaço entre o título e a imagem */
+        display: flex; /* Flexbox para a imagem */
+        justify-content: center; /* Centraliza a imagem horizontalmente */
+        overflow: hidden; /* Esconde partes da imagem que saem do retângulo */
+        object-fit: fill; /* Faz a imagem cobrir o contêiner, mantendo a proporção */
+    }
+    .title {
+        margin-left: 0; /* Remove a margem esquerda no mobile */
+        margin-right: 0; /* Remove a margem direita no mobile */
+        width: 100%; /* Permite que o título ocupe 100% da largura */
+    }
+    .title .name {
+        font-size: 35px;
+    }
+    .title .divider {
+        height: 20px;
+    }
+    .title.light .undertext {
+        color: #1b1b1b;
+        font-size: 14px;
+    }
+    .title .buttons {
+        justify-content: center; /* Centraliza os botões horizontalmente */
+        flex-direction: row; /* Alinha os botões em linha */
+        margin-top: 1rem; /* Espaço entre o título e os botões */
+        flex-wrap: wrap; /* Permite que os botões quebrem para a linha seguinte se não houver espaço */
+    }
+    .title .buttons a {
+        margin: 0.5rem; /* Espaçamento entre os botões */
+    }
+}
+
+.crosshair {
+    position: absolute;
+    width: 50px; /* Tamanho da crosshair */
+    height: 50px; /* Tamanho da crosshair */
+    background-image: url('./assets/crosshair.png'); /* Imagem da crosshair */
+    background-size: contain; /* Faz a imagem se ajustar ao tamanho do div */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    pointer-events: none; /* Ignora eventos do mouse */
+    animation: shake 0.5s linear infinite, fadeOut 1s forwards; /* Animação de chacoalhar e desaparecer */
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(-5px, -5px);
+    }
+    50% {
+        transform: translate(5px, 5px);
+    }
+    75% {
+        transform: translate(-5px, 5px);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/* Adicione isso ao seu Home.css */
+
+body.dark .timeline {
+    border-left: 2px solid #cfcfcf; /* Linha vertical da timeline */
+    padding-left: 1.5rem; /* Espaço à esquerda */
+    position: relative; /* Necessário para posicionar itens */
+}
+body.light .timeline {
+    border-left: 2px solid #1b1b1b; /* Linha vertical da timeline */
+    padding-left: 1.5rem; /* Espaço à esquerda */
+    position: relative; /* Necessário para posicionar itens */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem; /* Espaçamento entre itens */
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -31px; /* Posiciona o ponto à esquerda da linha */
+    top: 0;
+    width: 12px; /* Largura do ponto */
+    height: 12px; /* Altura do ponto */
+    background: #3498db; /* Cor do ponto */
+    border-radius: 50%; /* Faz o ponto ser circular */
+    z-index: 1; /* Coloca o ponto acima do conteúdo */
+}
+
+.timeline-item h3 {
+    font-size: 20px; /* Tamanho do título */
+    margin: 0;
+    font-weight: bold;
+}
+
+.timeline-item .date {
+    font-size: 14px; /* Tamanho da data */
+    color: #666; /* Cor da data */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo da data */
+}
+
+.timeline-item p {
+    margin: 0; /* Remove margens */
+    color: #333; /* Cor do texto da descrição */
+}
+

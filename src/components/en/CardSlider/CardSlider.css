@@ -1,0 +1,97 @@
+body.dark .slider-container {
+    position: relative;
+    width: 80%; /* Largura do contêiner */
+    margin: auto;
+    overflow: hidden; /* Oculta os itens que estão fora do contêiner */
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+
+body.light .slider-container {
+    position: relative;
+    width: 80%; /* Largura do contêiner */
+    margin: auto;
+    overflow: hidden; /* Oculta os itens que estão fora do contêiner */
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+}
+.slider {
+    display: flex; /* Alinha os itens em uma linha */
+    animation: slide 25s linear infinite; /* Animação contínua */
+    transition: transform 0.5s ease-in-out; /* Suaviza o movimento */
+}
+
+.slider.paused {
+    animation-play-state: paused; /* Pausa a animação quando o mouse está sobre o slider */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Começa no início */
+    }
+    100% {
+        transform: translateX(-50%); /* Move para a esquerda pela metade da largura total */
+    }
+}
+
+
+body.dark .slide {
+    width: 150px; /* Largura de cada card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px; /* Altura dos cards */
+    color: #e2e2e2;
+    background: #1b1b1b; /* Cor de fundo dos cards */
+    margin-right: 10px; /* Espaçamento entre os cards */
+}
+body.light .slide {
+    width: 130px; /* Largura de cada card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px; /* Altura dos cards */
+    color: #1b1b1b;
+    background: rgb(243, 243, 243); /* Cor de fundo dos cards */
+    margin-right: 10px; /* Espaçamento entre os cards */
+}
+h3 {
+    font-weight: 500;
+}
+body.dark .fade-left, .fade-right {
+    position: absolute;
+    top: 0;
+    width: 10%; /* Largura do fade nas bordas */
+    height: 100%;
+    background: linear-gradient(to right, #1b1b1b 0%, rgba(34, 34, 34, 0) 100%);
+    z-index: 1;
+}
+body.dark .fade-right {
+    right: 0;
+    background: linear-gradient(to left, #1b1b1b 0%, rgba(34, 34, 34, 0) 100%);
+}
+
+body.light .fade-left, .fade-right {
+    position: absolute;
+    top: 0;
+    width: 10%; /* Largura do fade nas bordas */
+    height: 100%;
+    background: linear-gradient(to right, #ffffff 0%, rgba(243, 243, 243, 0) 100%);
+    z-index: 1;
+}
+body.light .fade-right {
+    right: 0;
+    background: linear-gradient(to left, #ffffff 0%, rgba(243, 243, 243, 0) 100%);
+}
+body.dark .white-icon {
+    width: 30px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção do SVG */
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    filter: brightness(0) invert(1);
+}
+body.light .white-icon {
+    width: 30px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção do SVG */
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    filter: brightness(0) invert(0);
+}

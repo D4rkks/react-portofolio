@@ -1,0 +1,38 @@
+
+
+html, body {
+  overflow-x: hidden;
+  height: 100%; /* Garante que o body ocupe 100% da altura da janela */
+  margin: 0; /* Remove margens padrão */
+}
+body.dark {
+  overflow-x: hidden;
+  background-color: #1b1b1b; /* Degradê de cima para baixo */
+  color: white;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.light {
+  overflow-x: hidden;
+  background-color: rgb(243, 243, 243); /* Degradê de cima para baixo */
+  color: #1b1b1b;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

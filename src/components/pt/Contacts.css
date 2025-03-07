@@ -1,0 +1,103 @@
+.Contacts {
+    margin-bottom: 2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    font-family: var(--font-sans);
+    margin-top: 4rem;
+    line-height: 1.3;
+    font-family: Whitney, sans-serif;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column; /* Muda para coluna por padrão */
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center; /* Centraliza os itens dentro do card */
+    width: 75%;
+    height: auto; /* Permite que a altura seja ajustada automaticamente */
+    border-color: rgb(53, 53, 53);
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+}
+
+.card .title {
+    margin-bottom: 0.5rem; /* Adiciona um espaço abaixo do título */
+}
+
+.card .undertitle {
+    margin-top: 0.2rem; /* Define espaço acima do subtítulo */
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(104, 104, 104);
+}
+
+.buttons2 {
+    display: flex;
+    list-style: none;
+    margin-top: 1rem; /* Reduzido para um espaço menor */
+    margin-bottom: 0;
+    padding: 0; /* Certifique-se de que não há preenchimento indesejado */
+    font-size: 14px;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+}
+
+.buttons2 li {
+    margin: 0 1rem; /* Adiciona espaço entre os botões */
+}
+
+.buttons2 a {
+    color: rgb(241, 241, 241);
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    padding: 0rem; /* Ajustado para um padding menor */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.button-content {
+    display: flex; /* Flexbox para alinhar imagem e texto */
+    flex-direction: column; /* Coloca a imagem em cima do texto */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+body.dark .imgc {
+    width: 3rem; /* Largura desejada do retângulo */
+    height: auto; /* Altura desejada do retângulo */
+    filter: invert(1); /* Inverte as cores da imagem para torná-las brancas */
+}
+
+body.light .imgc {
+    width: 3rem; /* Largura desejada do retângulo */
+    height: auto; /* Altura desejada do retângulo */
+    filter: invert(0); /* Inverte as cores da imagem para torná-las brancas */
+}
+.username {
+    margin-top: 0.5rem; /* Espaço acima do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    color: rgb(104, 104, 104); /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+@media (max-width: 768px) {
+   .card {
+       width: 90%;
+   }
+   .card .undertitle {
+       margin-top: 0.2rem;
+   }
+   .buttons2 a {
+       padding: 0rem;
+   }
+   .buttons2 {
+       margin: 0;
+   }
+   .buttons li {
+       margin: 0 0; /* Adiciona espaço entre os botões */
+   }
+}

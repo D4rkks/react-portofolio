@@ -1,0 +1,29 @@
+/* src/components/NotFound.css */
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    text-align: center;
+  }
+  
+  .not-found h1 {
+    font-size: 3rem;
+    color: #ad1d2c; /* Vermelho para destacar o erro */
+  }
+  
+  .not-found p {
+    font-size: 1.25rem;
+  }
+  .sus{
+    max-height: 300px;
+  }
+  .not-found a {
+    font-weight: 500;
+    margin-top: 1rem;
+    color: #1a9b00;
+    text-decoration: none;
+  }
+  

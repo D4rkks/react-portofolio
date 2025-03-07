@@ -1,0 +1,5 @@
+
+.slider2 {
+    display: flex; /* Alinha os itens em uma linha */
+    animation: slide 15s linear infinite; /* Animação contínua */
+}

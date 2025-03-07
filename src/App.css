@@ -1,0 +1,192 @@
+/* Estilos para a scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da scrollbar */
+  background-color: #1b1b1b; /* Cor de fundo da scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5e5e5e; /* Cor da parte deslizante da scrollbar */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0f0f0f; /* Cor da parte deslizante ao passar o mouse */
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1b1b; /* Cor de fundo da pista da scrollbar */
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: white; /* Mude para 'black' se estiver no modo claro */
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0rem 1rem;
+  margin-left: auto; /* Alinha o botão à direita */
+  transition: transform 0.5s ease; /* Suaviza a transição */
+}
+
+.theme-toggle.emoji-transition {
+  transform: rotate(0.5turn); /* Aumenta o tamanho do emoji durante a transição */
+}
+
+
+.site-header {
+  font-family: Whitney, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 10px;
+}
+
+
+.navbar {
+  display: flex;
+  max-width: 80rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: 1px solid #313131;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.menu2 {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.navbar a{
+  display: block;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+body.light .navbar a {
+  color: #1b1b1b;
+}
+
+/* Estilos para o modo escuro */
+body.dark .navbar a {
+  color: white;
+}
+.navbar .logo{
+  margin: -6px;
+  font-size: 22px;
+}
+footer {
+  
+  max-width: 60rem;
+  padding-top: 1rem;
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-family: Whitney, sans-serif;
+  font-size: 1rem;
+  border-top: 1px solid #313131;
+  margin-top: 5rem;
+}
+
+/*mobile*/
+.menu-toggle.active span {
+  transform: rotate(90deg) translateY(-8px); /* Gira e alinha */
+}
+
+/* Evita sobreposição entre spans */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(90deg) translateY(-7px) translateX(16px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  transform: rotate(90deg) translateY(0px) translateX(8px); /* Mantém posição central */
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(90deg) translateY(7px); /* Posiciona na parte inferior */
+}
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+body.dark .menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+body.light .menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #1b1b1b;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.menu-toggle.active span {
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Estilos para a navbar no mobile */
+@media (max-width: 768px) {
+/* Estilos do botão de tema */
+  .menu2 {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .menu2 a.active{
+    padding: 1rem;
+    width: 100%;
+  }
+  .theme-toggle {
+    background: none;
+    border: none;
+    color: white; /* Mude para 'black' se estiver no modo claro */
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem 0rem;
+    margin-left: auto; /* Alinha o botão à direita */
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .navbar a {
+    padding: 1rem;
+    width: 50%;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    margin-top: -38px;
+    margin-bottom: 5px;
+    align-items: left;
+  }
+  
+}

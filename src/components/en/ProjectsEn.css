@@ -1,0 +1,179 @@
+.Projects {
+    margin-bottom: 2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    font-family: var(--font-sans);
+    margin-top: 1rem;
+    line-height: 1.3;
+    font-family: Whitney, sans-serif;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column; /* Muda para coluna por padrão */
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+.proj-title{
+    width: 100%;
+    height: 10rem;
+}
+.proj-title h1 {
+    font-size: 50px;
+    margin-bottom: 0.2rem; /* Ajuste a margem inferior do h1 */
+}
+
+.proj-title h2 {
+    color: rgb(165, 165, 165);
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 0; /* Remove a margem superior do h2 */
+}
+.proj-subtitle {
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    overflow: hidden; /* Evita que a imagem ultrapasse os limites do contêiner */
+    width: 80%; /* Largura do contêiner */
+    height: 500px; /* Ajuste conforme necessário */
+    display: flex; /* Para centralizar conteúdo se necessário */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    border-radius: 15px; /* Borda arredondada */
+    border: 1px solid rgb(41, 41, 41); /* Borda */
+    box-shadow: inset 0 0 25px #adadad; /* Sombra */
+    text-decoration: none;
+}
+
+.proj-subtitle::before {
+    content: '';
+    background-image: url('./assets/ghub.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço do elemento */
+    background-position: center; /* Centraliza a imagem */
+    position: absolute; /* Posiciona o pseudo-elemento sobre o contêiner */
+    top: 0; /* Início no topo */
+    left: 0; /* Início à esquerda */
+    right: 0; /* Largura total */
+    bottom: 0; /* Altura total */
+    transition: transform 0.5s ease; /* Transição suave para o efeito de zoom */
+    z-index: 0; /* Coloca o pseudo-elemento atrás do conteúdo */
+    border-radius: 15px;
+    border-color: rgb(41, 41, 41);
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: inset 0 0 25px #adadad;
+}
+
+.proj-subtitle::after {
+    content: '';
+    position: absolute; /* Posiciona o pseudo-elemento sobre o contêiner */
+    top: 0; /* Início no topo */
+    left: 0; /* Início à esquerda */
+    right: 0; /* Largura total */
+    bottom: 0; /* Altura total */
+    background-color: rgba(0, 0, 0, 0.4); /* Cor preta com 50% de opacidade */
+    z-index: 1; /* Coloca o pseudo-elemento acima da imagem */
+    border-radius: 15px;
+    border-color: rgb(41, 41, 41);
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: inset 0 0 25px #000000;
+}
+.proj-subtitle:hover::before {
+    transform: scale(1.1); /* Aumenta a imagem de fundo quando o mouse passa por cima */
+}
+.proj-subtitle2 {
+    margin-top: 5rem;
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    overflow: hidden; /* Evita que a imagem ultrapasse os limites do contêiner */
+    width: 80%; /* Largura do contêiner */
+    height: 500px; /* Ajuste conforme necessário */
+    display: flex; /* Para centralizar conteúdo se necessário */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    border-radius: 15px; /* Borda arredondada */
+    border: 1px solid rgb(41, 41, 41); /* Borda */
+    box-shadow: inset 0 0 25px #adadad; /* Sombra */
+    text-decoration: none;
+}
+
+.proj-subtitle2::before {
+    content: '';
+    background-image: url('./assets/dc.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço do elemento */
+    background-position: center; /* Centraliza a imagem */
+    position: absolute; /* Posiciona o pseudo-elemento sobre o contêiner */
+    top: 0; /* Início no topo */
+    left: 0; /* Início à esquerda */
+    right: 0; /* Largura total */
+    bottom: 0; /* Altura total */
+    transition: transform 0.5s ease; /* Transição suave para o efeito de zoom */
+    z-index: 0; /* Coloca o pseudo-elemento atrás do conteúdo */
+    border-radius: 15px;
+    border-color: rgb(41, 41, 41);
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: inset 0 0 25px #adadad;
+}
+
+.proj-subtitle2::after {
+    content: '';
+    position: absolute; /* Posiciona o pseudo-elemento sobre o contêiner */
+    top: 0; /* Início no topo */
+    left: 0; /* Início à esquerda */
+    right: 0; /* Largura total */
+    bottom: 0; /* Altura total */
+    background-color: rgba(0, 0, 0, 0.4); /* Cor preta com 50% de opacidade */
+    z-index: 1; /* Coloca o pseudo-elemento acima da imagem */
+    border-radius: 15px;
+    border-color: rgb(41, 41, 41);
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: inset 0 0 25px #000000;
+}
+.proj-subtitle2:hover::before {
+    transform: scale(1.1); /* Aumenta a imagem de fundo quando o mouse passa por cima */
+}
+.proj-text {
+    top: 190px;
+    left: -230px;
+    position: relative; /* Posiciona o texto em relação ao contêiner pai */
+    color: rgb(177, 177, 177); /* Cor do texto */
+    font-size: 25px; /* Tamanho do texto */
+    font-weight: 500; /* Negrito */
+    z-index: 2; /* Garante que o texto fique acima da imagem e da camada de sombra */
+    text-align: center;
+}
+.proj-text2 {
+    top: 190px;
+    left: -240px;
+    position: relative; /* Posiciona o texto em relação ao contêiner pai */
+    color: rgb(177, 177, 177); /* Cor do texto */
+    font-size: 25px; /* Tamanho do texto */
+    font-weight: 500; /* Negrito */
+    z-index: 2; /* Garante que o texto fique acima da imagem e da camada de sombra */
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .proj-title{
+        width: 100%;
+        height: 14rem;
+        text-align: center;
+    }
+    .proj-text {
+        top: 190px;
+        left: -15px;
+        position: relative; /* Posiciona o texto em relação ao contêiner pai */
+        color: white; /* Cor do texto */
+        font-size: 25px; /* Tamanho do texto */
+        font-weight: bold; /* Negrito */
+        z-index: 2; /* Garante que o texto fique acima da imagem e da camada de sombra */
+        text-align: center;
+    }
+    .proj-text2 {
+        top: 190px;
+        left: -20px;
+        position: relative; /* Posiciona o texto em relação ao contêiner pai */
+        color: white; /* Cor do texto */
+        font-size: 25px; /* Tamanho do texto */
+        font-weight: bold; /* Negrito */
+        z-index: 2; /* Garante que o texto fique acima da imagem e da camada de sombra */
+        text-align: center;
+    }
+}
